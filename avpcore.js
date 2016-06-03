@@ -27,6 +27,9 @@ function avp_core(videoId, containerId,  refreshRate = 30) {
 		canvasAvp.setAttribute('width', video.videoWidth);
 		canvasAvp.setAttribute('height', video.videoHeight);
 
+		//Start playing the video
+		video.play();
+		
 		if (annimation == null) {
 			// Define an annimation that draw the video in a canvas every "refreshRate" ms
 			// Default value is 30
@@ -35,8 +38,6 @@ function avp_core(videoId, containerId,  refreshRate = 30) {
 					ctxAvp.drawImage(video, 0, 0);
 				}
 			}, refreshRate);
-			//Start playing the video
-			video.play();
 		}
 	}
 
