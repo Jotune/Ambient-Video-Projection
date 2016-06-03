@@ -9,8 +9,8 @@ function avp_core(videoId, containerId,  refreshRate = 30) {
 	var ctxAvp = canvasAvp.getContext('2d');
 	var annimation;
 	
-	var CreateCanvas(containerId) {
-		var canvas = document.createElement("canvas");
+	function CreateCanvas(containerId) {
+        var canvas = document.createElement("canvas");
         canvas.style.position = "absolute";
         document.getElementById(containerId).appendChild(canvas);
         canvas.id = "AvpCanvas";
@@ -18,7 +18,7 @@ function avp_core(videoId, containerId,  refreshRate = 30) {
         canvas.style.left = 0;
         canvas.style.width = "100%";
         canvas.style.height = "100%";
-        canvasContainer.style.webkitFilter = "blur(80px)";
+        canvas.style.webkitFilter = "blur(80px)";
 		return canvas;
 	}
 	
