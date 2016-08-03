@@ -1,4 +1,4 @@
-# Ambient Video Projection (AVP)
+# Ambient Video Projection (Ambivid's core)
 Inspired by Phillips Ambilight, this JavaScript plugin creates light effects around any HTML5 video that correspond to the video content, resulting in a more immersive experience.
 
 ##How to use
